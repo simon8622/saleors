@@ -16,7 +16,7 @@ def _update_variants_names(instance: ProductType, saved_attributes: Iterable):
     """Product variant names are created from names of assigned attributes.
 
     After change in attribute value name, for all product variants using this
-    attributes we need to update the names.
+    attributes we need to update the names. Simon
     """
     initial_attributes = set(instance.variant_attributes.all())
     attributes_changed = initial_attributes.intersection(saved_attributes)
